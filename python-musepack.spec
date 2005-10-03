@@ -11,6 +11,7 @@ Source0:	http://www.sacredchao.net/~piman/software/%{module}-%{version}.tar.gz
 URL:		http://www.sacredchao.net/~piman/
 BuildRequires:	libmpcdec-devel
 BuildRequires:	python-devel
+BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.174
 %pyrequires_eq	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README NEWS
-%{py_sitedir}/musepack
+%doc NEWS README
+%dir %{py_sitedir}/musepack
 %attr(755,root,root) %{py_sitedir}/musepack/*.so
+%{py_sitedir}/musepack/*.py[co]
