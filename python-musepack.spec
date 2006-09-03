@@ -3,7 +3,7 @@ Summary:	A Python module for the Musepack library
 Summary(pl):	Modu³ Pythona do biblioteki Musepack
 Name:		python-%{module}
 Version:	0.4
-Release:	1
+Release:	2
 License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://www.sacredchao.net/~piman/software/%{module}-%{version}.tar.gz
