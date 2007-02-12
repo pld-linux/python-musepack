@@ -1,6 +1,6 @@
 %define		module	pymusepack
 Summary:	A Python module for the Musepack library
-Summary(pl):	Modu≥ Pythona do biblioteki Musepack
+Summary(pl.UTF-8):   Modu≈Ç Pythona do biblioteki Musepack
 Name:		python-%{module}
 Version:	0.4
 Release:	2
@@ -19,8 +19,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 A Python module for the the Musepack library.
 
-%description -l pl
-Modu≥ Pythona do biblioteki Musepack.
+%description -l pl.UTF-8
+Modu≈Ç Pythona do biblioteki Musepack.
 
 %prep
 %setup -q -n %{module}-%{version}
