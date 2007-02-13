@@ -1,6 +1,6 @@
 %define		module	pymusepack
 Summary:	A Python module for the Musepack library
-Summary(pl.UTF-8):   Moduł Pythona do biblioteki Musepack
+Summary(pl.UTF-8):	Moduł Pythona do biblioteki Musepack
 Name:		python-%{module}
 Version:	0.4
 Release:	2
