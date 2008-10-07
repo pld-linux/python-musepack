@@ -1,9 +1,9 @@
 %define		module	pymusepack
 Summary:	A Python module for the Musepack library
 Summary(pl.UTF-8):	Moduł Pythona do biblioteki Musepack
-Name:		python-%{module}
+Name:		python-musepack
 Version:	0.4
-Release:	3
+Release:	4
 License:	GPL v2
 Group:		Libraries/Python
 Source0:	http://www.sacredchao.net/~piman/software/%{module}-%{version}.tar.gz
@@ -14,6 +14,8 @@ BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.174
 %pyrequires_eq	python-modules
+Obsoletes:	python-pymusepack <= 0.4-3
+Provides:	python-pymusepack = %{version}-%{release}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
