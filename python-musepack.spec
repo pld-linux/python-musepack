@@ -14,8 +14,8 @@ BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.174
 %pyrequires_eq	python-modules
-Obsoletes:	python-pymusepack <= 0.4-3
 Provides:	python-pymusepack = %{version}-%{release}
+Obsoletes:	python-pymusepack <= 0.4-3
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -28,13 +28,13 @@ Moduł Pythona do biblioteki Musepack.
 %setup -q -n %{module}-%{version}
 
 %build
-python setup.py config
-python setup.py build
+%{__python} setup.py config
+%{__python} setup.py build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-python setup.py install \
+%{__python} setup.py install \
 	--optimize=2 \
 	--root $RPM_BUILD_ROOT
 
