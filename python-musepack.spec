@@ -29,13 +29,12 @@ Moduł Pythona do biblioteki Musepack.
 
 %build
 %{__python} setup.py config
-%{__python} setup.py build
+%py_build
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__python} setup.py install \
-	--optimize=2 \
+%py_install \
 	--root $RPM_BUILD_ROOT
 
 rm -f $RPM_BUILD_ROOT%{py_sitedir}/musepack/*.py
