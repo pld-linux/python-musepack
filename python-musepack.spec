@@ -12,7 +12,7 @@ URL:		http://www.sacredchao.net/~piman/
 BuildRequires:	libmpcdec-devel
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.174
+BuildRequires:	rpmbuild(macros) >= 1.710
 %pyrequires_eq	python-modules
 Provides:	python-pymusepack = %{version}-%{release}
 Obsoletes:	python-pymusepack <= 0.4-3
